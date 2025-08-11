@@ -1,0 +1,11 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/gabri/trab1_fci/trab1_fci.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/gabri/trab1_fci/trab1_fci.srcs/sources_1/new/clock_divider.sv,1745673253,systemVerilog,,C:/Users/gabri/trab1_fci/trab1_fci.srcs/sources_1/new/display_controller.sv,,clock_divider,,,,,,,,
+C:/Users/gabri/trab1_fci/trab1_fci.srcs/sources_1/new/display_controller.sv,1745673236,systemVerilog,,C:/Users/gabri/trab1_fci/trab1_fci.srcs/sources_1/new/fsm_game.sv,,display_controller,,,,,,,,
+C:/Users/gabri/trab1_fci/trab1_fci.srcs/sources_1/new/fsm_game.sv,1745673195,systemVerilog,,C:/Users/gabri/trab1_fci/trab1_fci.srcs/sources_1/new/led_rgb_controller.sv,,fsm_game,,,,,,,,
+C:/Users/gabri/trab1_fci/trab1_fci.srcs/sources_1/new/led_rgb_controller.sv,1745673246,systemVerilog,,C:/Users/gabri/trab1_fci/trab1_fci.srcs/sources_1/new/sequencer.sv,,led_rgb_controller,,,,,,,,
+C:/Users/gabri/trab1_fci/trab1_fci.srcs/sources_1/new/sequencer.sv,1745673219,systemVerilog,,C:/Users/gabri/trab1_fci/trab1_fci.srcs/sources_1/new/top.sv,,sequencer,,,,,,,,
+C:/Users/gabri/trab1_fci/trab1_fci.srcs/sources_1/new/top.sv,1745673183,systemVerilog,,,,top,,,,,,,,

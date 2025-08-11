@@ -22,7 +22,7 @@ module led_rgb_controller(
                 led_g = 0;
                 led_b = 0;
             end
-            default: begin // branco
+            default: begin
                 led_r = 1;
                 led_g = 1;
                 led_b = 1;
