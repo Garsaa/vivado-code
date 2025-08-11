@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue May 13 13:22:26 2025
+# Process ID: 5124
+# Current directory: C:/Users/gabri/OneDrive/햞ea de Trabalho/trab_genius/trab_genius
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2608 C:\Users\gabri\OneDrive\햞ea de Trabalho\trab_genius\trab_genius\trab1_fci.xpr
+# Log file: C:/Users/gabri/OneDrive/햞ea de Trabalho/trab_genius/trab_genius/vivado.log
+# Journal file: C:/Users/gabri/OneDrive/햞ea de Trabalho/trab_genius/trab_genius\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/gabri/OneDrive/햞ea de Trabalho/trab_genius/trab_genius/trab1_fci.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/gabri/trab1_fci' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 798.902 ; gain = 169.758
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 13 13:28:06 2025] Launched synth_1...
+Run output will be captured here: C:/Users/gabri/OneDrive/햞ea de Trabalho/trab_genius/trab_genius/trab1_fci.runs/synth_1/runme.log
+[Tue May 13 13:28:06 2025] Launched impl_1...
+Run output will be captured here: C:/Users/gabri/OneDrive/햞ea de Trabalho/trab_genius/trab_genius/trab1_fci.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 13 13:36:09 2025] Launched synth_1...
+Run output will be captured here: C:/Users/gabri/OneDrive/햞ea de Trabalho/trab_genius/trab_genius/trab1_fci.runs/synth_1/runme.log
+[Tue May 13 13:36:09 2025] Launched impl_1...
+Run output will be captured here: C:/Users/gabri/OneDrive/햞ea de Trabalho/trab_genius/trab_genius/trab1_fci.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 13 13:37:48 2025] Launched synth_1...
+Run output will be captured here: C:/Users/gabri/OneDrive/햞ea de Trabalho/trab_genius/trab_genius/trab1_fci.runs/synth_1/runme.log
+[Tue May 13 13:37:48 2025] Launched impl_1...
+Run output will be captured here: C:/Users/gabri/OneDrive/햞ea de Trabalho/trab_genius/trab_genius/trab1_fci.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 13 13:39:13 2025] Launched synth_1...
+Run output will be captured here: C:/Users/gabri/OneDrive/햞ea de Trabalho/trab_genius/trab_genius/trab1_fci.runs/synth_1/runme.log
+[Tue May 13 13:39:13 2025] Launched impl_1...
+Run output will be captured here: C:/Users/gabri/OneDrive/햞ea de Trabalho/trab_genius/trab_genius/trab1_fci.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 13 13:39:58 2025] Launched synth_1...
+Run output will be captured here: C:/Users/gabri/OneDrive/햞ea de Trabalho/trab_genius/trab_genius/trab1_fci.runs/synth_1/runme.log
+[Tue May 13 13:39:58 2025] Launched impl_1...
+Run output will be captured here: C:/Users/gabri/OneDrive/햞ea de Trabalho/trab_genius/trab_genius/trab1_fci.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 13 13:43:26 2025] Launched synth_1...
+Run output will be captured here: C:/Users/gabri/OneDrive/햞ea de Trabalho/trab_genius/trab_genius/trab1_fci.runs/synth_1/runme.log
+[Tue May 13 13:43:26 2025] Launched impl_1...
+Run output will be captured here: C:/Users/gabri/OneDrive/햞ea de Trabalho/trab_genius/trab_genius/trab1_fci.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 13 13:44:58 2025...
