@@ -4,9 +4,9 @@ module top(
 
     output logic led_r,
     output logic led_g,
-    output logic led_b
-    output logic walker_led_b
-    output logic walker_led_g
+    output logic led_b,
+    output logic walker_led_b,
+    output logic walker_led_g,
     output logic walker_led_r
 );
 

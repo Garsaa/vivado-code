@@ -1,7 +1,7 @@
 module fsm_game(
     input logic clk,
     input logic btnc,
-    output logic [1:0] led_color
+    output logic [1:0] led_color,
     output logic [1:0] walker_led_color
 );
 
