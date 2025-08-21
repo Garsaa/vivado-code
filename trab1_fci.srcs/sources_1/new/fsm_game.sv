@@ -1,39 +1,61 @@
 module fsm_game(
     input logic clk,
+    input logic btnc,
     output logic [1:0] led_color
+    output logic [1:0] walker_led_color
 );
 
-    typedef enum logic [2:0] { START, RED_LED, GREEN_LED, YELLOW_LED } state_t;
+    typedef enum logic [2:0] { START, RED_LED, GREEN_LED, YELLOW_LED, WAIT_TO_YELLOW } state_t;
     state_t state = START;
 
     logic [31:0] count = 0;
     logic [31:0] count_2 = 0;
     logic [31:0] count_3 = 0;
-    logic tick = 0;
-    logic tick_2 = 0;
-    logic tick_3 = 0;
 
-    always_ff @(posedge clk) begin
-            case (state)
+     always_ff @(posedge clk) begin
+            unique case (state)
                 START: begin
                     led_color <= 2'b00;
-                    state <= RED_LED;
-                end
-                RED_LED: begin
-                    led_color <= 2'b11;
+                    walker_led_color <= 2'b00;
                     state <= GREEN_LED;
                 end
                 GREEN_LED: begin
                     led_color <= 2'b10;
-                    state <= YELLOW_LED;
+                    walker_led_color <= 2'b11;
+                    if(btnc) begin
+                        count = 0;
+                        state <= WAIT_TO_YELLOW;
+                    end
+                end
+                WAIT_TO_YELLOW: begin
+                    if(count >= 3) begin
+                        led_color <= 2'b01;
+                        walker_led_color <= 2'b11;
+                        state <= YELLOW_LED;
+                    end else begin
+                        count <= count + 1;
+                    end
                 end
                 YELLOW_LED: begin
                     led_color <= 2'b01;
-                    state <= RED_LED;
+                    walker_led_color <= 2'b11;
+                    if (count_2 >= 1) begin
+                        count_3 <= 0;         
+                        state   <= RED_LED;
+                    end else begin
+                        count_2 <= count_2 + 1;
+                    end
+                end
+                RED_LED: begin
+                    led_color <= 2'b11;
+                    walker_led_color <= 2'b10;
+                    if (count_3 >= 5) begin
+                        state <= GREEN_LED;
+                    end else begin
+                        count_3 <= count_3 + 1;
+                    end
                 end
                 default: state <= START;
             endcase
     end
-
-
 endmodule
