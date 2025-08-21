@@ -1,11 +1,9 @@
 module top(
-    // Clock
     input logic clk,
 
-    // LED 16 RGB colors
     output logic led_r,
     output logic led_g,
-    output logic led_b,
+    output logic led_b
 );
 
     logic clk1hz;
@@ -14,7 +12,7 @@ module top(
 
     clkdiv #( .DIV(100000000) ) div1hz (
         .clk(clk),
-        .tick(clk_100hz)
+        .tick(div1hz)
     );
 
     fsm_game fsm_inst (

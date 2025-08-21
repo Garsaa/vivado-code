@@ -1,6 +1,6 @@
 module fsm_game(
     input logic clk,
-    output logic [1:0] led_color,
+    output logic [1:0] led_color
 );
 
     typedef enum logic [2:0] { START, RED_LED, GREEN_LED, YELLOW_LED } state_t;
