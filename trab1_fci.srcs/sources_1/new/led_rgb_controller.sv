@@ -22,10 +22,10 @@ module led_rgb_controller(
                 led_g = 0;
                 led_b = 0;
             end
-            default: begin // branco
-                led_r = 1;
-                led_g = 1;
-                led_b = 1;
+            default: begin // apagado
+                led_r = 0;
+                led_g = 0;
+                led_b = 0;
             end
         endcase
     end

@@ -1,36 +1,76 @@
 module fsm_game(
     input logic clk,
-    output logic [1:0] led_color
+    input logic switch,
+    output logic [1:0] led_color,
+    output logic [1:0] secondary_led_color
 );
 
-    typedef enum logic [2:0] { START, RED_LED, GREEN_LED, YELLOW_LED } state_t;
+typedef enum logic [3:0] {
+        START,
+        GREEN_RED,
+        YELLOW_RED,
+        RED_GREEN,
+        RED_YELLOW,
+        BLINK_ON,
+        BLINK_OFF
+    } state_t;
     state_t state = START;
 
-    logic [31:0] count = 0;
-    logic [31:0] count_2 = 0;
-    logic [31:0] count_3 = 0;
-    logic tick = 0;
-    logic tick_2 = 0;
-    logic tick_3 = 0;
-
     always_ff @(posedge clk) begin
-            case (state)
-                START: begin
+            unique case (state)
+               START: begin
                     led_color <= 2'b00;
-                    state <= RED_LED;
+                    secondary_led_color <= 2'b00;
+                    state <= GREEN_RED;
                 end
-                RED_LED: begin
-                    led_color <= 2'b11;
-                    state <= GREEN_LED;
+               GREEN_RED: begin
+                    if (switch) begin
+                        state <= BLINK_ON;
+                    end else begin
+                        led_color <= 2'b10; 
+                        secondary_led_color <= 2'b11; 
+                        state <= YELLOW_RED;
+                    end
                 end
-                GREEN_LED: begin
-                    led_color <= 2'b10;
-                    state <= YELLOW_LED;
+               YELLOW_RED: begin
+                    if (switch) begin
+                        state <= BLINK_ON;
+                    end else begin
+                        led_color <= 2'b01;
+                        secondary_led_color <= 2'b11;
+                    state <= RED_GREEN;
+                    end
                 end
-                YELLOW_LED: begin
-                    led_color <= 2'b01;
-                    state <= RED_LED;
+                RED_GREEN: begin
+                    if (switch) begin
+                        state <= BLINK_ON;
+                    end else begin
+                        led_color <= 2'b11;
+                        secondary_led_color <= 2'b10;
+                        state <= RED_YELLOW;
+                    end
                 end
+                RED_YELLOW: begin
+                    if (switch) begin
+                        state <= BLINK_ON;
+                    end else begin
+                        led_color <= 2'b11;
+                        secondary_led_color <= 2'b01;
+                        state <= GREEN_RED;
+                    end
+                end
+             BLINK_ON: begin
+                led_color <= 2'b01;
+                secondary_led_color <= 2'b11;
+                if (!switch) state <= GREEN_RED;
+                else state <= BLINK_OFF;
+            end
+               BLINK_OFF: begin
+                led_color <= 2'b00;
+                secondary_led_color <= 2'b00;
+                if (!switch) state <= GREEN_RED;
+                else state <= BLINK_ON;
+            end
                 default: state <= START;
             endcase
     end
