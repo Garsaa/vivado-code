@@ -1,228 +1,123 @@
 #-----------------------------------------------------------
-# Vivado v2018.3 (64-bit)
-# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
-# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue May 13 15:43:57 2025
-# Process ID: 17096
-# Current directory: C:/trab_genius/trab_genius/trab1_fci.runs/synth_1
-# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: C:/trab_genius/trab_genius/trab1_fci.runs/synth_1/top.vds
-# Journal file: C:/trab_genius/trab_genius/trab1_fci.runs/synth_1\vivado.jou
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Aug 23 13:38:12 2025
+# Process ID: 6539
+# Current directory: /home/garsa/Projects/Personal/vivado-code/trab1_fci.runs/synth_1
+# Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: /home/garsa/Projects/Personal/vivado-code/trab1_fci.runs/synth_1/top.vds
+# Journal file: /home/garsa/Projects/Personal/vivado-code/trab1_fci.runs/synth_1/vivado.jou
+# Running On: garsa-lin, OS: Linux, CPU Frequency: 3854.530 MHz, CPU Physical cores: 4, Host memory: 20690 MB
 #-----------------------------------------------------------
 source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1552.441 ; gain = 0.020 ; free physical = 9201 ; free virtual = 23460
 Command: synth_design -top top -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
-INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12712 
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6572
+INFO: [Synth 8-11241] undeclared symbol 'div1hz', assumed default net type 'wire' [/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/top.sv:20]
+WARNING: [Synth 8-2254] instance name 'div1hz' matches net/port name [/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/top.sv:21]
+INFO: [Synth 8-6826] previous declaration of 'div1hz' is from here [/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/top.sv:20]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 437.449 ; gain = 98.215
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2218.406 ; gain = 377.801 ; free physical = 8224 ; free virtual = 22514
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top' [C:/trab_genius/trab_genius/trab1_fci.srcs/sources_1/new/top.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'clkdiv' [C:/trab_genius/trab_genius/trab1_fci.srcs/sources_1/new/clkdiv.sv:1]
-	Parameter DIV bound to: 1000000 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'clkdiv' (1#1) [C:/trab_genius/trab_genius/trab1_fci.srcs/sources_1/new/clkdiv.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'clkdiv__parameterized0' [C:/trab_genius/trab_genius/trab1_fci.srcs/sources_1/new/clkdiv.sv:1]
-	Parameter DIV bound to: 100000 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'clkdiv__parameterized0' (1#1) [C:/trab_genius/trab_genius/trab1_fci.srcs/sources_1/new/clkdiv.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'fsm_game' [C:/trab_genius/trab_genius/trab1_fci.srcs/sources_1/new/fsm_game.sv:1]
-INFO: [Synth 8-226] default block is never used [C:/trab_genius/trab_genius/trab1_fci.srcs/sources_1/new/fsm_game.sv:35]
-INFO: [Synth 8-6155] done synthesizing module 'fsm_game' (2#1) [C:/trab_genius/trab_genius/trab1_fci.srcs/sources_1/new/fsm_game.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'sequencer' [C:/trab_genius/trab_genius/trab1_fci.srcs/sources_1/new/sequencer.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'sequencer' (3#1) [C:/trab_genius/trab_genius/trab1_fci.srcs/sources_1/new/sequencer.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'display_controller' [C:/trab_genius/trab_genius/trab1_fci.srcs/sources_1/new/display_controller.sv:1]
-INFO: [Synth 8-226] default block is never used [C:/trab_genius/trab_genius/trab1_fci.srcs/sources_1/new/display_controller.sv:43]
-INFO: [Synth 8-6155] done synthesizing module 'display_controller' (4#1) [C:/trab_genius/trab_genius/trab1_fci.srcs/sources_1/new/display_controller.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'led_rgb_controller' [C:/trab_genius/trab_genius/trab1_fci.srcs/sources_1/new/led_rgb_controller.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'led_rgb_controller' (5#1) [C:/trab_genius/trab_genius/trab1_fci.srcs/sources_1/new/led_rgb_controller.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'top' (6#1) [C:/trab_genius/trab_genius/trab1_fci.srcs/sources_1/new/top.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/top.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'clkdiv' [/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/clkdiv.sv:1]
+	Parameter DIV bound to: 100000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clkdiv' (0#1) [/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/clkdiv.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'fsm_game' [/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/fsm_game.sv:1]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/fsm_game.sv:16]
+INFO: [Synth 8-6155] done synthesizing module 'fsm_game' (0#1) [/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/fsm_game.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'led_rgb_controller' [/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/led_rgb_controller.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'led_rgb_controller' (0#1) [/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/led_rgb_controller.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/top.sv:1]
+WARNING: [Synth 8-3848] Net clk1hz in module/entity top does not have driver. [/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/top.sv:13]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 492.598 ; gain = 153.363
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2284.375 ; gain = 443.770 ; free physical = 8137 ; free virtual = 22430
 ---------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 492.598 ; gain = 153.363
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2302.188 ; gain = 461.582 ; free physical = 8134 ; free virtual = 22427
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 492.598 ; gain = 153.363
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2302.188 ; gain = 461.582 ; free physical = 8134 ; free virtual = 22427
 ---------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2302.188 ; gain = 0.000 ; free physical = 8134 ; free virtual = 22427
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/trab_genius/trab_genius/trab1_fci.srcs/constrs_1/new/nexys4ddr.xdc]
-Finished Parsing XDC File [C:/trab_genius/trab_genius/trab1_fci.srcs/constrs_1/new/nexys4ddr.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/trab_genius/trab_genius/trab1_fci.srcs/constrs_1/new/nexys4ddr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/constrs_1/new/nexys4ddr.xdc]
+Finished Parsing XDC File [/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/constrs_1/new/nexys4ddr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/constrs_1/new/nexys4ddr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 844.914 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 844.961 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2432.938 ; gain = 0.000 ; free physical = 8105 ; free virtual = 22408
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 844.961 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 844.961 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2432.938 ; gain = 0.000 ; free physical = 8105 ; free virtual = 22408
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 844.961 ; gain = 505.727
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2432.938 ; gain = 592.332 ; free physical = 8104 ; free virtual = 22406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 844.961 ; gain = 505.727
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2432.938 ; gain = 592.332 ; free physical = 8104 ; free virtual = 22406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 844.961 ; gain = 505.727
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2432.938 ; gain = 592.332 ; free physical = 8104 ; free virtual = 22406
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm_game'
-INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5544] ROM "leds_on" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "count_2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5544] ROM "reset_game" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "error" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "win" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "current_dir" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                   START |                         00000001 |                              000
-                   RESET |                         00000010 |                              001
-                    SHOW |                         00000100 |                              010
-               SHOW_LOOP |                         00001000 |                              011
-    WAIT_AND_CHECK_INPUT |                         00010000 |                              100
-                 SUCCESS |                         00100000 |                              101
-                   FINAL |                         01000000 |                              110
-                    FAIL |                         10000000 |                              111
+                   START |                            00001 |                              000
+               GREEN_LED |                            00010 |                              010
+          WAIT_TO_YELLOW |                            00100 |                              100
+              YELLOW_LED |                            01000 |                              011
+                 RED_LED |                            10000 |                              001
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm_game'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 844.961 ; gain = 505.727
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2432.938 ; gain = 592.332 ; free physical = 8104 ; free virtual = 22407
 ---------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 5     
-	   2 Input      5 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 3     
-	   2 Input      3 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 4     
-	                4 Bit    Registers := 3     
-	                3 Bit    Registers := 1     
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 13    
+	               32 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 4     
-	   8 Input      8 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 3     
-	   7 Input      7 Bit        Muxes := 5     
-	   2 Input      4 Bit        Muxes := 1     
-	   8 Input      4 Bit        Muxes := 3     
-	   8 Input      2 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 1     
-	   6 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 6     
-	   8 Input      1 Bit        Muxes := 12    
-	   4 Input      1 Bit        Muxes := 3     
+	   5 Input   32 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   5 Input    2 Bit        Muxes := 3     
+	   5 Input    1 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 6     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start RTL Hierarchical Component Statistics 
----------------------------------------------------------------------------------
-Hierarchical RTL Component report 
-Module clkdiv 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     32 Bit       Adders := 1     
-+---Registers : 
-	               32 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-Module clkdiv__parameterized0 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     32 Bit       Adders := 1     
-+---Registers : 
-	               32 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-Module fsm_game 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     32 Bit       Adders := 3     
-	   2 Input      5 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 3     
-+---Registers : 
-	               32 Bit    Registers := 2     
-	                4 Bit    Registers := 3     
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 11    
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 2     
-	   8 Input      8 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 3     
-	   2 Input      4 Bit        Muxes := 1     
-	   8 Input      4 Bit        Muxes := 3     
-	   8 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 4     
-	   8 Input      1 Bit        Muxes := 12    
-Module sequencer 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input      2 Bit        Muxes := 1     
-	   6 Input      2 Bit        Muxes := 1     
-Module display_controller 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      3 Bit       Adders := 1     
-+---Registers : 
-	                3 Bit    Registers := 1     
-+---Muxes : 
-	   7 Input      7 Bit        Muxes := 5     
-Module led_rgb_controller 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   4 Input      1 Bit        Muxes := 3     
----------------------------------------------------------------------------------
-Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Part Resource Summary
@@ -236,59 +131,34 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5545] ROM "div100hz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "div100hz/tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "div1khz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "div1khz/tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5544] ROM "fsm_inst/state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5545] ROM "fsm_inst/count_2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "fsm_inst/state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "fsm_inst/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "fsm_inst/tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "div100hz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "div100hz/tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "div1khz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "div1khz/tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port clk in module top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 844.961 ; gain = 505.727
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2432.938 ; gain = 592.332 ; free physical = 8079 ; free virtual = 22386
 ---------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 844.961 ; gain = 505.727
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2432.938 ; gain = 592.332 ; free physical = 8076 ; free virtual = 22387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 859.738 ; gain = 520.504
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2432.938 ; gain = 592.332 ; free physical = 8076 ; free virtual = 22387
 ---------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (fsm_inst/FSM_onehot_state_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (fsm_inst/FSM_onehot_state_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (fsm_inst/FSM_onehot_state_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (fsm_inst/FSM_onehot_state_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (fsm_inst/FSM_onehot_state_reg[0]) is unused and will be removed from module top.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 860.535 ; gain = 521.301
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2432.938 ; gain = 592.332 ; free physical = 8076 ; free virtual = 22387
 ---------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -305,50 +175,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 860.535 ; gain = 521.301
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2432.938 ; gain = 592.332 ; free physical = 8068 ; free virtual = 22389
 ---------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 860.535 ; gain = 521.301
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2432.938 ; gain = 592.332 ; free physical = 8068 ; free virtual = 22389
 ---------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 860.535 ; gain = 521.301
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2432.938 ; gain = 592.332 ; free physical = 8068 ; free virtual = 22389
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 860.535 ; gain = 521.301
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2432.938 ; gain = 592.332 ; free physical = 8068 ; free virtual = 22389
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 860.535 ; gain = 521.301
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2432.938 ; gain = 592.332 ; free physical = 8068 ; free virtual = 22389
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 860.535 ; gain = 521.301
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2432.938 ; gain = 592.332 ; free physical = 8068 ; free virtual = 22389
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -361,55 +218,32 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |BUFG   |     2|
-|2     |CARRY4 |    36|
-|3     |LUT1   |     5|
-|4     |LUT2   |    16|
-|5     |LUT3   |    18|
-|6     |LUT4   |    64|
-|7     |LUT5   |    31|
-|8     |LUT6   |    36|
-|9     |FDRE   |   164|
-|10    |FDSE   |     1|
-|11    |IBUF   |     6|
-|12    |OBUF   |    34|
-+------+-------+------+
-
-Report Instance Areas: 
-+------+------------+-----------------------+------+
-|      |Instance    |Module                 |Cells |
-+------+------------+-----------------------+------+
-|1     |top         |                       |   413|
-|2     |  disp_inst |display_controller     |    16|
-|3     |  div100hz  |clkdiv                 |    51|
-|4     |  div1khz   |clkdiv__parameterized0 |    51|
-|5     |  fsm_inst  |fsm_game               |   253|
-+------+------------+-----------------------+------+
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |     6|
++------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 860.535 ; gain = 521.301
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2432.938 ; gain = 592.332 ; free physical = 8068 ; free virtual = 22389
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 860.535 ; gain = 168.938
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 860.535 ; gain = 521.301
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2432.938 ; gain = 461.582 ; free physical = 8067 ; free virtual = 22389
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2432.938 ; gain = 592.332 ; free physical = 8067 ; free virtual = 22389
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2432.938 ; gain = 0.000 ; free physical = 8067 ; free virtual = 22389
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 861.961 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2432.938 ; gain = 0.000 ; free physical = 8340 ; free virtual = 22673
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
+Synth Design complete | Checksum: 2984f9f9
 INFO: [Common 17-83] Releasing license: Synthesis
-59 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+26 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 861.961 ; gain = 535.746
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 861.961 ; gain = 0.000
-WARNING: [Constraints 18-5210] No constraints selected for write.
-Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/trab_genius/trab_genius/trab1_fci.runs/synth_1/top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 2432.938 ; gain = 880.496 ; free physical = 8338 ; free virtual = 22673
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1759.693; main = 1462.676; forked = 374.909
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4029.281; main = 2400.926; forked = 1628.355
+INFO: [Common 17-1381] The checkpoint '/home/garsa/Projects/Personal/vivado-code/trab1_fci.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue May 13 15:44:25 2025...
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 23 13:38:44 2025...

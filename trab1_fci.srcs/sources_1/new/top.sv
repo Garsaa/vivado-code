@@ -17,7 +17,7 @@ module top(
 
     clkdiv #( .DIV(100000000) ) div1hz (
         .clk(clk),
-        .tick(div1hz)
+        .tick(clk1hz)
     );
 
     fsm_game fsm_inst (

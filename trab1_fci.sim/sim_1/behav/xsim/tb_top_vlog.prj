@@ -1,11 +1,10 @@
 # compile verilog/system verilog design source files
 sv xil_defaultlib  \
-"../../../../trab1_fci.srcs/sources_1/new/clock_divider.sv" \
-"../../../../trab1_fci.srcs/sources_1/new/display_controller.sv" \
+"../../../../trab1_fci.srcs/sources_1/new/clkdiv.sv" \
 "../../../../trab1_fci.srcs/sources_1/new/fsm_game.sv" \
 "../../../../trab1_fci.srcs/sources_1/new/led_rgb_controller.sv" \
-"../../../../trab1_fci.srcs/sources_1/new/sequencer.sv" \
 "../../../../trab1_fci.srcs/sources_1/new/top.sv" \
+"../../../../trab1_fci.srcs/sim_1/new/top_testbench.sv" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/clkdiv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/fsm_game.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_game
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/led_rgb_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_rgb_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sim_1/new/top_testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/garsa/Projects/Personal/vivado-code/trab1_fci.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,7 +1,28 @@
-Vivado Simulator 2018.3
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: D:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8408027d46064812b249b8c1945d1115 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2023.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
 Starting static elaboration
+Pass Through NonSizing Optimizer
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/top.sv" Line 1. Module top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/clkdiv.sv" Line 1. Module clkdiv(DIV=1000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/fsm_game.sv" Line 1. Module fsm_game doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/led_rgb_controller.sv" Line 1. Module led_rgb_controller doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/led_rgb_controller.sv" Line 1. Module led_rgb_controller doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/top.sv" Line 1. Module top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/clkdiv.sv" Line 1. Module clkdiv(DIV=1000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/fsm_game.sv" Line 1. Module fsm_game doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/led_rgb_controller.sv" Line 1. Module led_rgb_controller doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/led_rgb_controller.sv" Line 1. Module led_rgb_controller doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clkdiv(DIV=1000)
+Compiling module xil_defaultlib.fsm_game
+Compiling module xil_defaultlib.led_rgb_controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
