@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Sep  1 09:52:54 2025
+# Process ID: 29956
+# Current directory: /home/garsa/Projects/Personal/vivado-code/trab1_fci.runs/impl_1
+# Command line: vivado -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: /home/garsa/Projects/Personal/vivado-code/trab1_fci.runs/impl_1/top.vdi
+# Journal file: /home/garsa/Projects/Personal/vivado-code/trab1_fci.runs/impl_1/vivado.jou
+# Running On: garsa-lin, OS: Linux, CPU Frequency: 3906.440 MHz, CPU Physical cores: 4, Host memory: 20690 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
