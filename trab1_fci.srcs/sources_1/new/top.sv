@@ -1,17 +1,15 @@
 module top(
     input logic clk,
-    input logic [15:0] switchs,
-
+    input logic [15:0] switchs, 
+    // 0-3 carros-horizontal, 4-7 pedrestes-horizontal
+    // 8-11 carros vertical, 12-15 pedrestes vertical
     output logic led_r,
     output logic led_g,
     output logic led_b,
     output logic vertical_led_b,
     output logic vertical_led_g,
     output logic vertical_led_r,
-
-    output logic [15:0] led,
-    output logic [6:0] seg,
-    output logic [7:0] an
+    output logic [15:0] led
 );
     logic clk1hz;
     logic [1:0] led_color;

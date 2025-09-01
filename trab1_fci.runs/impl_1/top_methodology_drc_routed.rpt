@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-| Date         : Mon Sep  1 09:53:39 2025
+| Date         : Mon Sep  1 11:47:53 2025
 | Host         : garsa-lin running 64-bit unknown
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 20
+             Violations found: 9
 +-----------+------------------+-----------------------------+------------+
 | Rule      | Severity         | Description                 | Violations |
 +-----------+------------------+-----------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell | 20         |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell | 9          |
 +-----------+------------------+-----------------------------+------------+
 
 2. REPORT DETAILS
@@ -59,77 +59,22 @@ Related violations: <none>
 
 TIMING-17#6 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsm_inst/count_2_reg[0]/C is not reached by a timing clock
+The clock pin fsm_inst/led_color_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#7 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsm_inst/count_2_reg[1]/C is not reached by a timing clock
+The clock pin fsm_inst/led_color_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#8 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsm_inst/count_3_reg[0]/C is not reached by a timing clock
+The clock pin fsm_inst/vertical_led_color_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#9 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsm_inst/count_3_reg[1]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#10 Critical Warning
-Non-clocked sequential cell  
-The clock pin fsm_inst/count_3_reg[2]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#11 Critical Warning
-Non-clocked sequential cell  
-The clock pin fsm_inst/count_reg[0]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#12 Critical Warning
-Non-clocked sequential cell  
-The clock pin fsm_inst/count_reg[1]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#13 Critical Warning
-Non-clocked sequential cell  
-The clock pin fsm_inst/fsm_count_3_reg[0]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#14 Critical Warning
-Non-clocked sequential cell  
-The clock pin fsm_inst/fsm_count_3_reg[1]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#15 Critical Warning
-Non-clocked sequential cell  
-The clock pin fsm_inst/fsm_count_3_reg[2]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#16 Critical Warning
-Non-clocked sequential cell  
-The clock pin fsm_inst/fsm_count_3_reg[3]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#17 Critical Warning
-Non-clocked sequential cell  
-The clock pin fsm_inst/led_color_reg[0]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#18 Critical Warning
-Non-clocked sequential cell  
-The clock pin fsm_inst/led_color_reg[1]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#19 Critical Warning
-Non-clocked sequential cell  
-The clock pin fsm_inst/walker_led_color_reg[0]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#20 Critical Warning
-Non-clocked sequential cell  
-The clock pin fsm_inst/walker_led_color_reg[1]/C is not reached by a timing clock
+The clock pin fsm_inst/vertical_led_color_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 

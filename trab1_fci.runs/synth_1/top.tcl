@@ -88,10 +88,9 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
   /home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/clkdiv.sv
-  /home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/display_controller.sv
   /home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/fsm_game.sv
   /home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/led_rgb_controller.sv
-  /home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/seg_7_enum.sv
+  /home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/leds_controller.sv
   /home/garsa/Projects/Personal/vivado-code/trab1_fci.srcs/sources_1/new/top.sv
 }
 OPTRACE "Adding files" END { }
