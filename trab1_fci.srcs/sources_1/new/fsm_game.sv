@@ -1,9 +1,8 @@
 module fsm_game(
     input logic clk,
-    input logic btnc,
+    input  logic [15:0] switchs,
     output logic [1:0] led_color,
-    output logic [1:0] walker_led_color,
-    output logic [3:0] fsm_count_3
+    output logic [1:0] vertical_led_color
 );
 
     typedef enum logic [2:0] { START, RED_LED, GREEN_LED, YELLOW_LED, WAIT_TO_YELLOW } state_t;
@@ -17,13 +16,11 @@ module fsm_game(
             unique case (state)
                 START: begin
                     led_color <= 2'b00;
-                    walker_led_color <= 2'b00;
                     fsm_count_3 <= 4'd0;
                     state <= GREEN_LED;
                 end
                 GREEN_LED: begin
                     led_color <= 2'b10;
-                    walker_led_color <= 2'b11;
                     if(btnc) begin
                         count <= 0;
                         state <= WAIT_TO_YELLOW;
@@ -32,7 +29,6 @@ module fsm_game(
                 WAIT_TO_YELLOW: begin
                     if(count >= 3) begin
                         led_color <= 2'b01;
-                        walker_led_color <= 2'b11;
                         state <= YELLOW_LED;
                     end else begin
                         count <= count + 1;
@@ -40,7 +36,6 @@ module fsm_game(
                 end
                 YELLOW_LED: begin
                     led_color <= 2'b01;
-                    walker_led_color <= 2'b11;
                     if (count_2 >= 2) begin
                         count_3 <= 0;
                         fsm_count_3 <= 4'd5;
@@ -51,7 +46,6 @@ module fsm_game(
                 end
                 RED_LED: begin
                     led_color <= 2'b11;
-                    walker_led_color <= 2'b10;
                     if (count_3 >= 5) begin
                         state <= GREEN_LED;
                     end else begin
