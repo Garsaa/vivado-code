@@ -1,11 +1,10 @@
 module seg_7_enum (
-    input  logic [3:0] value,  // valor BCD (0 a 9)
-    output logic [6:0] seg     // segmentos {a,b,c,d,e,f,g}
+    input  logic [3:0] value,  // 0..9
+    output logic [6:0] seg     // {a,b,c,d,e,f,g} ativo em 0 ou 1 conforme teu hardware
 );
     logic [6:0] raw;
-
     always_comb begin
-        case(value)
+        unique case(value)
             4'd0: raw = 7'b1000000;
             4'd1: raw = 7'b1111001;
             4'd2: raw = 7'b0100100;
@@ -16,10 +15,8 @@ module seg_7_enum (
             4'd7: raw = 7'b1111000;
             4'd8: raw = 7'b0000000;
             4'd9: raw = 7'b0010000;
-            default: raw = 7'b1111111; // nada acende
+            default: raw = 7'b1111111;
         endcase
     end
-
-    // Inversão para ânodo comum
     assign seg = raw;
 endmodule
